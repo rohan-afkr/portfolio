@@ -1,0 +1,203 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="UTF-8">\
+<title>Rohan Store</title>\
+\
+<style>\
+body \{\
+margin: 0;\
+font-family: 'Segoe UI', sans-serif;\
+background: linear-gradient(to right, #0f172a, #1e293b);\
+color: white;\
+scroll-behavior: smooth;\
+\}\
+\
+/* HEADER */\
+header \{\
+display: flex;\
+justify-content: space-between;\
+padding: 20px 50px;\
+background: rgba(0,0,0,0.6);\
+backdrop-filter: blur(10px);\
+position: sticky;\
+top: 0;\
+\}\
+\
+nav a \{\
+color: white;\
+margin-left: 20px;\
+text-decoration: none;\
+transition: 0.3s;\
+\}\
+\
+nav a:hover \{\
+color: #38bdf8;\
+\}\
+\
+/* HERO */\
+.hero \{\
+text-align: center;\
+padding: 120px 20px;\
+animation: fadeIn 1.5s ease-in-out;\
+\}\
+\
+.hero h2 \{\
+font-size: 50px;\
+background: linear-gradient(to right, #38bdf8, #818cf8);\
+-webkit-background-clip: text;\
+color: transparent;\
+\}\
+\
+.btn \{\
+padding: 12px 25px;\
+border: none;\
+border-radius: 25px;\
+background: linear-gradient(to right, #38bdf8, #6366f1);\
+color: white;\
+cursor: pointer;\
+margin-top: 20px;\
+transition: 0.3s;\
+\}\
+\
+.btn:hover \{\
+transform: scale(1.1);\
+\}\
+\
+/* PRODUCTS */\
+.products \{\
+display: grid;\
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));\
+gap: 25px;\
+padding: 50px;\
+\}\
+\
+.card \{\
+background: rgba(255,255,255,0.05);\
+border-radius: 15px;\
+padding: 20px;\
+text-align: center;\
+transition: 0.4s;\
+opacity: 0;\
+transform: translateY(30px);\
+\}\
+\
+.card.show \{\
+opacity: 1;\
+transform: translateY(0);\
+\}\
+\
+.card:hover \{\
+transform: translateY(-10px) scale(1.03);\
+\}\
+\
+.card img \{\
+width: 100%;\
+border-radius: 10px;\
+\}\
+\
+.price \{\
+color: #22c55e;\
+font-weight: bold;\
+\}\
+\
+button \{\
+background: #38bdf8;\
+border: none;\
+padding: 10px;\
+border-radius: 20px;\
+margin-top: 10px;\
+cursor: pointer;\
+transition: 0.3s;\
+\}\
+\
+button:hover \{\
+background: #0ea5e9;\
+\}\
+\
+/* FOOTER */\
+footer \{\
+text-align: center;\
+padding: 20px;\
+background: rgba(0,0,0,0.5);\
+\}\
+\
+/* ANIMATION */\
+@keyframes fadeIn \{\
+from \{opacity: 0;\}\
+to \{opacity: 1;\}\
+\}\
+</style>\
+</head>\
+\
+<body>\
+\
+<header>\
+<h1>Rohan Store</h1>\
+<nav>\
+<a href="#">Home</a>\
+<a href="#">Products</a>\
+<a href="#">Contact</a>\
+</nav>\
+</header>\
+\
+<div class="hero">\
+<h2>Shop Smart. Shop Fast.</h2>\
+<p>Modern products at unbeatable prices</p>\
+<button class="btn">Shop Now</button>\
+</div>\
+\
+<section class="products">\
+\
+<div class="card">\
+<img src="https://via.placeholder.com/250">\
+<h3>Smart Watch</h3>\
+<p class="price">\uc0\u8377 1999</p>\
+<button>Add to Cart</button>\
+</div>\
+\
+<div class="card">\
+<img src="https://via.placeholder.com/250">\
+<h3>Sneakers</h3>\
+<p class="price">\uc0\u8377 2499</p>\
+<button>Add to Cart</button>\
+</div>\
+\
+<div class="card">\
+<img src="https://via.placeholder.com/250">\
+<h3>Headphones</h3>\
+<p class="price">\uc0\u8377 1499</p>\
+<button>Add to Cart</button>\
+</div>\
+\
+</section>\
+\
+<footer>\
+<p>\'a9 2026 Rohan Store</p>\
+</footer>\
+\
+<script>\
+// Scroll animation\
+const cards = document.querySelectorAll('.card');\
+\
+window.addEventListener('scroll', () => \{\
+cards.forEach(card => \{\
+const top = card.getBoundingClientRect().top;\
+if(top < window.innerHeight - 50)\{\
+card.classList.add('show');\
+\}\
+\});\
+\});\
+</script>\
+\
+</body>\
+</html>}
